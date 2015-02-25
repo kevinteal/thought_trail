@@ -10,4 +10,10 @@ $(document).ready(function(e) {
 
 function unlock_app(){
 	$("#unlock").html('<img src="themes/images/ajax-loader.gif" height="46" width="46" />');
+	$('body').pagecontainer('change', '#page_main', {
+        transition: 'flip',
+        changeHash: false,
+        reverse: true,
+        showLoadMsg: true
+    });
 }
