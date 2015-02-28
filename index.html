@@ -37,14 +37,23 @@
 
 <!-- PAGE TWO MAIN --> 
 	<div data-role="page" id="page_main" data-theme="a">
-		<div data-role="header" data-position="inline">
-			<h1>Thought Trail</h1>
+		<div data-role="panel" id="menu_panel" data-display="overlay" data-theme="b">
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+        <div data-role="header" data-position="inline">
+         <a href="#menu_panel"class="ui-btn ui-alt-icon ui-shadow-icon ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">Menu</a>
+			<h1 >Thought Trail</h1>
 		</div>
 		<div data-role="content" data-theme="a">
-			<p>contents</p>
+			
+            <ul data-role="listview" id="thought_list" data-filter="true" data-filter-placeholder="search thoughts" >
+            	<li><a href="#1" class="ui-alt-icon ui-nodisc-icon"><div id="box1"><div class="box">Mr BubblessssBubbles</div><div class="box boxright">43 days</div></div></a></li>
+                <li><a href="#2" class="ui-alt-icon ui-nodisc-icon">Lemmington</a></li>
+                <li><a href="#3" class="ui-alt-icon ui-nodisc-icon">easy easy</a></li>
+            </ul>
 		</div>
         <div data-role="footer" data-position="fixed">
-			<h1>Thought Trail</h1>
+		 <center><img src="imgs/wolfstudiostrans.png" height="35" width="80" /></center>
 		</div>
 	</div>
 <!-- END OF PAGE TWO MAIN --> 

@@ -17,7 +17,16 @@
     font-family: cloudFont;
     src: url(../font/HeadintheClouds.ttf)
 }
-
+#box1{
+	width:100%;
+}
+.box{
+	width:50%;
+	float:left;
+}
+.boxright{
+	text-align:right;
+}
 #bubble{
 	width:320px;
 	height:570px;
@@ -54,11 +63,12 @@
   line-height: normal;   	
 }
 .enter_bottom div.ui-input-text {
-    width: 80% !important;
+    width: 50% !important;
 	margin:0 auto;
 	background-color:white !important;
 	border:2px solid black !important;
 	color:black !important;
+	text-align:center !important;
 }
 
 html {
